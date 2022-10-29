@@ -1,0 +1,102 @@
+\chapter{Revisão de Funções Reais}
+\label{chap:revisão_de_funções_reais}
+
+	 \section{Funções de uma Variável Real}
+	 \label{sec:funções_de_uma_variável_real}
+	 
+	 Entende-se por uma função $f$ a terna
+	 \begin{equation}
+		 (A,B,a \mapsto b)
+	 \end{equation}
+	 em que $A$ e $B$ são dois conjuntos e $a \mapsto b$ uma regra que permite associar a \textit{cada elemento a} de $A$ a \textit{um único elemento b} de $B$. O conjunto $A$ é denomidado \textit{domínio de} $f$ e é indicado por $D_f$, assim $A=D_f$. O conjunto $B$ é denomidado \textit{contradomínio de} $f$ e é indicado por $CD_f$, assim $B=CD_f$. O único elemento $b$ de $B$ associado ao elemento $a$ de $A$ é indicado por $f(a)$.
+
+	 Uma função de domínio $A$ e contradomínio $B$ é usualmente indicada por $f:A\rightarrow B$. Se $A$ (domnínio) e $B$ (contradomínio) são subconjuntos de $\mathbb{R}$, então $f$ é uma \textit{função de uma variável real a valores reais} tal que $f:A\rightarrow B$.
+
+	 Seja $f:A\rightarrow B$ uma função, seu gráfico será dado pelo conjunto de pares ordenados
+	 \begin{equation}
+	 G_f = \left\{ \left(x,f\left(x\right)\right) \mid x \in A \right\};
+	 \end{equation}
+	 assim o gráfico de $f$ é um subconjunto do conjunto de todos os pares ordenados $\left(x,f(x)\right)$ de números reais. Além disso, o gráfico de $f$ pode então se pensado como o lugar geométrico descrito pelo ponto $\left(x,f(x)\right)$ quando $x$ percorre o domínio de $f$.
+
+	 É usual representar uma função $f$ de uma variável real a valores reais e com domínio $A$, simplesmente por \[
+	 	y=f(x),x \in A
+	 .\] Neste caso, $x$ é a \textit{variável independente} e $y$ a \textit{variável dependente}, ou simplesmente dizer que $y$ é função de $x$.
+	 
+	 % section funções_de_uma_variável_real (end)
+
+	\section{Função Composta e Função Inversa}
+	\label{sec:função_composta_e_função_inversa}
+	
+		\subsection{Função Composta}
+		\label{sec:função_composta}
+		
+		Uma função é dita \textbf{composta} ou \textbf{função de função} quando é obtida substituindo-se a variável independente por uma função \[
+			f \circ g(x) = f(g(x))
+		.\] 
+
+		\textbf{Obs.:} \[
+			f \circ g \neq g \circ f
+		.\] 
+		% subsection função_composta (end)
+		
+		\subsection{Função Insaversa}
+		\label{sec:função_inversa}
+		
+		Dada uma função $f:A \rightarrow B$, se $f$ é \textbf{bijetora}, então define-se a função inversa $f^{-1}$ como sendo a função de $B \rightarrow A$, tal que $f^{-1}(y) = x$. Os gráficos de $f$ e $f^{-1}$ são simétricos em relação à bissetriz do primeiro quadrante.
+		% subsection função_inversa (end)
+	% section função_composta_e_função_inversa (end)
+
+	\section{Transforação de Funções}
+	\label{sec:transforação_de_funções}
+	
+	Dada uma função conhecide $f(x)$, define-se a função \[
+		g(x) = B + Af(ax+b)
+	.\] 
+
+	\section{Função Polinomial}
+	\label{sec:função_polinomial}
+	
+	A função é dita \textbf{polinomial} se $f:\R \rightarrow \mathbb{R}$ é dada por
+	\begin{equation}
+		f(x) = a_nx^{n} + a_{n-1}x^{n-1} + a_{n-2}x^{n-2} + \cdots + a_1x^{1} + a_0,
+	\end{equation}
+	em que $a_0 \neq 0$, $a_i \in \mathbb{R}$ e $n \in \mathbb{Z}_{+}^{*}$, onde denomina-se função polinomial de grau $n$ $(n \in \mathbb{N})$.
+	
+	A função polinomial pode ser decomposta em fatores e esses fatores estarão associados com a raíz desse polinômio, podendo ser reescrita como \[
+		p(k) = k(x-r_1)(x-r_2) \cdots (x-r_n)
+	,\] onde $r_n$ são as  $n$ raízes do polinômio.
+
+	Alguns casos particulares:
+	\begin{description}
+		\item[Função Constante:] $f(x) = a_0$ 
+		\item[Função Linear ou afim:] $f(x) = a_1x + a_0$
+		\item[Função Quadrática:] $f(x) = a_2x^2 + a_1x + a_0$
+		\item[Função Cúbica:]  $f(x) = a_3x^3 + a_2x^2 + a_1x + a_0$
+	\end{description}
+
+	\subsubsection{Função Constante}
+	\label{sec:função_constante}
+	
+	Uma função $y = f(x)$, $x \in A$, dada por $f(x) = k$, $k$ constante, denomina-se \textit{função constante}.
+
+\begin{figure}[ht]
+    % This in a custom LaTeX template
+    \centering
+   \incfig[0.6]{func_const}
+   \caption{Função Constante}
+   \label{fig:func_const}
+\end{figure}
+
+	% subsubsection função_constante (end)
+
+	\subsubsection{Função Linear}
+	\label{sec:função_linear}
+	
+	A função linear é dada por $f:\mathbb{R}\rightarrow \mathbb{R}$ representada por
+	\begin{equation}
+		f(x) = a_1x + a_0
+	\end{equation}
+	e tem o gráfico representado na figura abaixo, onde $a_0$ é o \textbf{coeficiente linear} da função, $a_1$ é o \textbf{coeficiente angular} definida por \[
+	\tangent \theta = \frac{y_1 - y_0}{x_1 - x_0} = a_1
+.\]		
+
