@@ -1,1 +1,1 @@
-# lect-calculus-I
+# Lectures Calculus I
