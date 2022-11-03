@@ -1,0 +1,91 @@
+\lesson{4}{15 SET 2022}{Funções Reais Elementares -- Parte 2}
+
+\section{Funções Exponencias}
+
+	A função é dita \textbf{exponencial} de base ``$a$'' quando apresenta a seguinte equação:
+	\[
+		f(x) = ka^{x}, k \in \R^{*}
+	.\] 
+	Onde a base não pode ser qualquer número, tem que ser $a > 1$ e $a \neq 1$. Se $a = 1$ torna-se uma função constante, pois 1 elevado a qualquer $x$ é sempre 1. O domínio dessa função é $\R$, a imagem é $\R^{*}_{+}$.
+\begin{figure}[ht]
+    % This in a custom LaTeX template
+    \centering
+   \incfig[1]{graf-exp}
+   \caption{Gráfico da função exponencial}
+   \label{fig:graf-exp}
+\end{figure}
+
+\begin{description}
+	\item [$a > 1$:]  $a^{m} \leq a^{n} \iff m \leq n$
+	\item [$0 < a < 1$:] $a^{m} \leq a^{n} \iff m \geq n$
+\end{description}
+
+\subsection{Propriedades}
+\begin{eqnarray*}
+	&&a^{m} = a^{n} \iff m = n \\
+	\\
+	&&a^{m}\cdot a^{n} = a^{m+n} \\
+	\\
+	&&\frac{a^{m}}{a^{n}} = a^{m-n} \\
+	\\
+	&&(a^{m})^{n} = a^{m\cdot n} \\
+	\\
+	&&a^{-m} = \frac{1}{a^{m}}
+\end{eqnarray*}
+
+\section{Funções Logarítmica}
+
+A função é dita \textbf{logarítmica} de base ``$a$'' quando apresenta a seguinte equação:
+\[
+	f(x) = k \log_{a}(x), k \in \R^{*}
+.\]
+A base é $a > 0$ e $a \neq 1$. Só existe logaritmo de número positivo, ou seja, $a > 0$. Portanto o domínio é  $\R^{*}_{+}$ e a imagem é todo $\R$.
+
+\begin{figure}[ht]
+   \centering
+   \incfig[1]{graf-log}
+   \caption{Gráfico da função logarítmica}
+   \label{fig:graf-log}
+\end{figure}
+
+A função logarítmica e a função exponencial são \textbf{função inversas} e terão simetria em relação a bissetriz do primeiro e terceiro quadrante, observe o gráfico \ref{fig:sim-log}.
+
+\begin{figure}[ht]
+    % This in a custom LaTeX template
+    \centering
+   \incfig[1]{sim-log}
+   \caption{Simetria em relação a bissetriz do primeiro e terceiro quadrante das funções exponenciais e logarítmicas.}
+   \label{fig:sim-log}
+\end{figure}
+
+\begin{description}
+	\item [Função Crescente] $a > 1$: $\log_a(m) \leq \log_a(n) \iff m \leq n$
+	\item [Função Decrescente] $0 < a < 1$: $\log_a(m) \leq \log_a(n) \iff m \geq n$
+\end{description}
+
+Um fato a ser notado é quando se tem um $\log$ na base 10. Quando isso ocorre, não se faz necessário escrever a base, assumindo a forma: \[
+	\log x
+,\] porém quando tem-se o logaritmo na base neperiano, ou seja, sua base é o $e$ o logaritmo é escrito como
+ \[
+	\ln x
+.\] 
+
+\subsection{Propriedades}
+
+\begin{eqnarray*}
+	&&\log_a(x) = y \iff a^{y} = x \\
+	\\
+	&&\log_a(m) = \log_a(n) \iff m = n \\
+	\\
+	&&\log_a(a) = 1 \\
+	\\
+	&&\log_a(b^{k}) = k\log_a(b) \\
+	\\
+	&&\log_{a^{p}}(b) = \frac{1}{p}\log_a(b) \\
+	\\
+	&&\log_a(x\cdot y) = \log_a(x) + \log_a(y) \\
+	\\
+	&&\log_a\left(\frac{x}{y}\right) = \log_a(x) - \log_a(y) \\
+	\\
+	&&\log_a(b) = \frac{\log_c(b)}{\log_c(a)}
+\end{eqnarray*}

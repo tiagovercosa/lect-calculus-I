@@ -1,5 +1,28 @@
-\chapter{Revisão de Funções Reais}
-\label{chap:revisão_de_funções_reais}
+\chapter{Funções Reais}
+\label{chap:funções_reais}
+
+\lesson{1}{02 NOV 2022}{Revisão de Funções Reais -- Parte 1}
+
+	A relação entre dois conjuntos $A$ e $B$ é um conjunto de pares ordenados, no qual cada elemento do par ordenado pertence a um dos conjuntos relacionados. Vale saber, não existem restrições (regra) entre os elementos dos conjuntos. Nesse sentido, a função será um caso particular de relação: \textbf{Todo elemento do primeiro conjunto} corresponde a \textbf{um único elemento} do segundo conjunto.
+
+	Uma relação entre dois conjuntos $A$ e $B$ será uma \textbf{função de $A$ em $B$}, se e somente se, para todo $x$ pertencente  a $A$ exista um único $y$ pertencente a $B$, de modo que todo $x$ se relacione com $y$.
+
+	\[
+			f(x): A \subset \R \rightarrow B \subset \R
+	,\] 
+
+	\[
+		x \in A \rightarrow f(x) = y \in B
+	.\]		
+
+\begin{figure}[ht]
+   \centering
+   \incfig[0.7]{conjunto}
+   \caption{Relação entre os conjuntos $A$ e $B$ definindo uma função.}
+   \label{fig:conjunto}
+\end{figure}
+
+	O conjunto $A$ é chamado de \textbf{domínio} da função e o conjunto $B$ é chamado de \textbf{contradomínio} da função. Sendo assim, o contradomínio é todo o conjunto $B$ e os elementos desse conjunto que tem correspondência com o dominínio é denominado de \textbf{imagem}, ou seja, o conjunto imagem é um subconjunto do contradomínio.
 
 	 \section{Funções de uma Variável Real}
 	 \label{sec:funções_de_uma_variável_real}
@@ -8,7 +31,7 @@
 	 \begin{equation}
 		 (A,B,a \mapsto b)
 	 \end{equation}
-	 em que $A$ e $B$ são dois conjuntos e $a \mapsto b$ uma regra que permite associar a \textit{cada elemento a} de $A$ a \textit{um único elemento b} de $B$. O conjunto $A$ é denomidado \textit{domínio de} $f$ e é indicado por $D_f$, assim $A=D_f$. O conjunto $B$ é denomidado \textit{contradomínio de} $f$ e é indicado por $CD_f$, assim $B=CD_f$. O único elemento $b$ de $B$ associado ao elemento $a$ de $A$ é indicado por $f(a)$.
+	 em que $A$ e $B$ são dois conjuntos e $a \mapsto b$ uma regra que permite associar a \textit{cada elemento a} de $A$ a \textit{um único elemento b} de $B$. O conjunto $A$ é denominado \textit{domínio de} $f$ e é indicado por $D_f$, assim $A=D_f$. O conjunto $B$ é denominado \textit{contradomínio de} $f$ e é indicado por $CD_f$, assim $B=CD_f$. O único elemento $b$ de $B$ associado ao elemento $a$ de $A$ é indicado por $f(a)$.
 
 	 Uma função de domínio $A$ e contradomínio $B$ é usualmente indicada por $f:A\rightarrow B$. Se $A$ (domnínio) e $B$ (contradomínio) são subconjuntos de $\mathbb{R}$, então $f$ é uma \textit{função de uma variável real a valores reais} tal que $f:A\rightarrow B$.
 
@@ -24,12 +47,65 @@
 	 
 	 % section funções_de_uma_variável_real (end)
 
+	\section{Classificação de Função Real}
+	\label{sec:classificação_de_função_real}
+	
+	Uma função é denominada \textbf{sobrejetora} se, e somente se, o seu conjunto imagem for igual ao contradomínio.	
+
+	Uma função é denominada \textbf{injetora} se os elementos distintos do domínio tiverem imagens distintas, ou seja, dois elementos não podem ter a mesma imagem.
+	
+	Uma função será \textbf{bijetora} se ela for, simultaneamente, sobrejetora e injetora.
+
+	Uma função é dita \textbf{par} se apresenta	uma simetria em relação ao eixo vertical.
+	\[
+		\forall x \in \textbf{Domínio} \rightarrow f(x) = f(-x)
+	.\] 
+	Uma função é dita \textbf{ímpar} se apresenta uma simetria em relação à origem dos eixos.
+
+	\[
+		\forall x \in \textbf{Domínio} \rightarrow f(-x) = -f(x)
+	.\]
+	Podem existir funções que não são nem par e nem ímpar!
+
+	\begin{figure}[ht]
+	   \centering
+	   \incfig[0.9]{par_impar}
+	   \caption{Definição gráfica de uma função par (a) e uma função ímpar (b).}
+	   \label{fig:par_impar}
+	\end{figure}
+	
+	Uma função é dita \textbf{crescente} em um determinado intervalo se os valores de $f(x)$ crescerem quando $x$ crescer neste intervalo: \[
+		x_2 > x_1 \iff f(x_2) > f(x_1)
+	.\] 
+	Uma função é dita \textbf{decrescente} em um determinado intervalo se os valores de $f(x)$ decrescerem quando $x$ crescer neste intervalo: \[
+		x_2 > x_1 \iff f(x_2) < f(x_1)
+	.\] 
+
+	Uma função é dita \textbf{monótona não decrescente} em um intervalo se os valores de $f(x)$ \textbf{não decrescerem} quando $x$ crescer neste intervalo.\[
+		x_2 > x_1 \iff f(x_2) \geq f(x_1)
+	.\] Uma função é dita \textbf{monótona não crescente} em um intervalo se os valores de $f(x)$ \textbf{não crescerem} quando $x$ crescer neste intervalo.\[
+		x_2 > x_1 \iff f(x_2) \leq f(x_1)
+	.\] 
+	% section classificação_de_função_real (end)
+
+	\section{Operações com Função Real}
+	\label{sec:operações_com_função_real}
+	
+	Sejam $f$ e $g$ duas funções reais de variável real. Seja $D$ a interseção do domínio de $f$ e do domínio de $g$, então
+
+	\begin{enumerate}
+		\item $h(x) = (kf)(x) = kf(x)$, $k$ é real, definida em $D_f$;
+		\item $h(x) = (f \pm g)(x) = f(x) \pm g(x)$, definida em $D$;
+		\item $h(x) = (f \cdot g)(x) = f(x) \cdot g(x)$, definida em $D$;
+		\item $h(x) = \left(\frac{f}{g}\right)(x) = \frac{f(x)}{g(x)}$, definida em $D \cap g(x) \neq 0$;
+		\item $f(x) = g(x) \iff I = D_f = D_g$ e $\forall x \in I$, $f(x) = g(x)$.
+	\end{enumerate}
+	
+	% section operações_com_função_real (end)
+
 	\section{Função Composta e Função Inversa}
 	\label{sec:função_composta_e_função_inversa}
 	
-		\subsection{Função Composta}
-		\label{sec:função_composta}
-		
 		Uma função é dita \textbf{composta} ou \textbf{função de função} quando é obtida substituindo-se a variável independente por uma função \[
 			f \circ g(x) = f(g(x))
 		.\] 
@@ -37,66 +113,14 @@
 		\textbf{Obs.:} \[
 			f \circ g \neq g \circ f
 		.\] 
-		% subsection função_composta (end)
-		
-		\subsection{Função Insaversa}
-		\label{sec:função_inversa}
 		
 		Dada uma função $f:A \rightarrow B$, se $f$ é \textbf{bijetora}, então define-se a função inversa $f^{-1}$ como sendo a função de $B \rightarrow A$, tal que $f^{-1}(y) = x$. Os gráficos de $f$ e $f^{-1}$ são simétricos em relação à bissetriz do primeiro quadrante.
-		% subsection função_inversa (end)
-	% section função_composta_e_função_inversa (end)
-
-	\section{Transforação de Funções}
-	\label{sec:transforação_de_funções}
-	
-	Dada uma função conhecide $f(x)$, define-se a função \[
-		g(x) = B + Af(ax+b)
-	.\] 
-
-	\section{Função Polinomial}
-	\label{sec:função_polinomial}
-	
-	A função é dita \textbf{polinomial} se $f:\R \rightarrow \mathbb{R}$ é dada por
-	\begin{equation}
-		f(x) = a_nx^{n} + a_{n-1}x^{n-1} + a_{n-2}x^{n-2} + \cdots + a_1x^{1} + a_0,
-	\end{equation}
-	em que $a_0 \neq 0$, $a_i \in \mathbb{R}$ e $n \in \mathbb{Z}_{+}^{*}$, onde denomina-se função polinomial de grau $n$ $(n \in \mathbb{N})$.
-	
-	A função polinomial pode ser decomposta em fatores e esses fatores estarão associados com a raíz desse polinômio, podendo ser reescrita como \[
-		p(k) = k(x-r_1)(x-r_2) \cdots (x-r_n)
-	,\] onde $r_n$ são as  $n$ raízes do polinômio.
-
-	Alguns casos particulares:
-	\begin{description}
-		\item[Função Constante:] $f(x) = a_0$ 
-		\item[Função Linear ou afim:] $f(x) = a_1x + a_0$
-		\item[Função Quadrática:] $f(x) = a_2x^2 + a_1x + a_0$
-		\item[Função Cúbica:]  $f(x) = a_3x^3 + a_2x^2 + a_1x + a_0$
-	\end{description}
-
-	\subsubsection{Função Constante}
-	\label{sec:função_constante}
-	
-	Uma função $y = f(x)$, $x \in A$, dada por $f(x) = k$, $k$ constante, denomina-se \textit{função constante}.
 
 \begin{figure}[ht]
-    % This in a custom LaTeX template
-    \centering
-   \incfig[0.6]{func_const}
-   \caption{Função Constante}
-   \label{fig:func_const}
+   \centering
+   \incfig[0.8]{func_inv}
+	 \caption{Gráfico da simetria em relação à bissetriz do primeiro quadrante.}
+   \label{fig:func_inv}
 \end{figure}
 
-	% subsubsection função_constante (end)
-
-	\subsubsection{Função Linear}
-	\label{sec:função_linear}
-	
-	A função linear é dada por $f:\mathbb{R}\rightarrow \mathbb{R}$ representada por
-	\begin{equation}
-		f(x) = a_1x + a_0
-	\end{equation}
-	e tem o gráfico representado na figura abaixo, onde $a_0$ é o \textbf{coeficiente linear} da função, $a_1$ é o \textbf{coeficiente angular} definida por \[
-	\tangent \theta = \frac{y_1 - y_0}{x_1 - x_0} = a_1
-.\]		
-
+	% section função_composta_e_função_inversa (end)
